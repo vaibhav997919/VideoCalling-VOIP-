@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 // handle socket connections
 io.on("connection", (socket) => {
     console.log(
-        `Someone connected to socket server and socket id is ${socket.id}`
+        `Someone connected to socket server and socket id i s ${socket.id}`
     );
     socket.on("join-user", (username) => {
         console.log(`${username} joined socket connection`);
